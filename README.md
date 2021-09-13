@@ -30,6 +30,7 @@ A ideia inicial dessa tarefa escolar é a criação de um aplicativo via MIT App
 <img src="https://www-websitedemo-4db9.restdb.io/media/5798d93c8783df440000026c" width="200">
 <img src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto/gigs/105040166/original/a068aa0bf723f101aea775be086bf91be5debc12/solve-html-css-js-or-js-library-problems.png" width="200">
 <img src="https://miro.medium.com/max/1000/0*lAAzZwzRmq6bDpsT.png" width="200">
+<img src="https://getbootstrap.com.br/docs/4.1/assets/img/bootstrap-stack.png" width="200">
 
 ## 🤔 F.A.Q.
 
