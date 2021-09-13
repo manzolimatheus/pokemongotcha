@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GotchaPokémon</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../scripts/score.js" defer></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://lh3.googleusercontent.com/proxy/Jnw1EvWSnIoEfTyT-psgUok92cQ3t2-wK5Mnnws7QAzqc6RHcHgPy__R32-A07nkFA_Zkc8CabGfnc2S9yHFw-NO4g45YVEVIb172oPpUDCA1s1e3BTjdqNet4g"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <header class="text-center">
+        <a href="../index.html" class="navbar-brand">
+          <img
+            src="https://raw.githubusercontent.com/manzolimatheus/pokemongotcha/main/Assets/Logo.png"
+            alt="Logo"
+            width="300"
+          />
+        </a>
+      </header>
+      <nav class="navbar navbar-expand-lg mb-3">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a href="../index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="score.html" class="nav-link">Pontuação</a>
+          </li>
+        </ul>
+      </nav>
+      <h3 class="text-center">🔥 Melhores pontuações</h3>
+      <br />
+      <div v-show="loading" class="text-center p-5">
+        <img
+          src="https://i.imgur.com/aMz1Qtu.gif"
+          alt="Loading"
+          style="width: 30%"
+        />
+        <p>Carregando...</p>
+      </div>
+      <div class="row scores mx-auto">
+        <div class="col-sm-6" v-for="player in players">
+          <h3 class="player-title text-truncate">{{player.player}}</h3>
+          <img
+            :src="'https://raw.githubusercontent.com/manzolimatheus/pokemongotcha/main/Treinadores/'+ Math.ceil(Math.random()*5) +'.jpg'"
+            alt="Foto do treinador"
+            class="player_img"
+          />
+          <p class="player-score rounded-pill p-3 mt-2">
+            🔥 Pokémons capturados: {{player.score}}
+          </p>
+        </div>
+      </div>
+      <footer class="text-center p-3">
+        <div class="row text-center">
+          <div class="col">
+            <img
+              src="https://i.pinimg.com/originals/89/4d/fd/894dfd7cf2d241cb43d31f3c57f40397.png"
+              alt="Pikachu"
+              style="width: 200px"
+            />
+            <br />
+            <a href="public/download/pegaPokemon.apk" download="pegaPokemon.apk"
+              >Baixar aplicativo Android</a
+            >
+          </div>
+          <div class="col">
+            <img
+              src="https://i0.wp.com/pokemythology.net/conteudo/imgs/info/pokedex10closed.png?resize=200%2C220&ssl=1"
+              alt="Pikachu"
+              style="width: 200px"
+            />
+            <br />
+            <a href="https://github.com/manzolimatheus/pokemongotcha"
+              >Código Fonte (.aia e Assets)</a
+            >
+          </div>
+        </div>
+        <p>Github & Behance: /manzolimatheus</p>
+      </footer>
+    </div>
+  </body>
+</html>
