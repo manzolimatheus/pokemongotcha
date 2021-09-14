@@ -8,6 +8,7 @@
 GotchaPokémon é um pequeno dever de casa de minhas aulas de programação de aplicativos mobile, um jogo sobre capturar pokémons, você pode criar uma conta e jogar, após o termino da partida pode salvar sua pontuação em um ranking online. O jogo contém suporte a Android e Web.
 
 **📍 Ideia inicial da tarefa**
+
 A ideia inicial dessa tarefa escolar é a criação de um aplicativo via MIT App Inventor, um pequeno jogo com o objetivo de capturar o mosquito que se move constantemente durante a tela.
 
 <div align="center">
